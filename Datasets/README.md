@@ -7,10 +7,8 @@
 - Name: MedMNIST (3D Subsets)
 - Total Samples: 3,492 volumetric images
 - Datasets Used:
-
-**AdrenalMNIST3D**
-
-**VesselMNIST3D**
+    - **AdrenalMNIST3D**
+    - **VesselMNIST3D**
 
 Image Type: 3D medical volumes (CT/MRI slices)
 Classes: Healthy / Diseased
