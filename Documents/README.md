@@ -8,8 +8,10 @@ Repository for TransAugNet, a deep learning–based biomedical image analysis fr
 
 ### Two main Objectives:
 
-**1. 🩺 Disease Classification** 
+## 1. 🩺 Disease Classification
+
 → Automatically classify medical images as Healthy / Diseased
 
-**2. ⏱️ Fast Diagnosis Support**
+## 2. ⏱️ Fast Diagnosis Support
+
 → Reduce diagnosis time from minutes to seconds for clinical decision support
