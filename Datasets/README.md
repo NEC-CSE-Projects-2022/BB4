@@ -1,4 +1,9 @@
 ### 🧠 MedMNIST (3D) Dataset — Preview & Downloa
+> 📦 This project uses a **NumPy compressed (.npz) dataset** containing
+> preprocessed **3D biomedical medical image volumes and labels**.
+>  
+> Due to the volumetric nature of the data, samples are stored in `.npz`
+> format instead of individual image files.
 
 ---
 
