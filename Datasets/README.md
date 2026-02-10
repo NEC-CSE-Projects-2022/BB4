@@ -170,3 +170,86 @@ loader = DataLoader(dataset, batch_size=16, shuffle=True)
 
 ```
 
+### 🐍 Load MedMNIST 3D Dataset
+
+``` python
+
+from medmnist import AdrenalMNIST3D, VesselMNIST3D
+from torchvision import transforms
+
+transform = transforms.Compose([
+    transforms.ToTensor()
+])
+
+train_dataset = AdrenalMNIST3D(split='train', transform=transform, download=True)
+test_dataset  = AdrenalMNIST3D(split='test', transform=transform, download=True)
+
+```
+
+### 🐍 Load Data with NumPy
+
+``` python
+
+import numpy as np
+
+images = np.load("adrenalmnist3d.npy")
+labels = np.load("labels.npy")
+
+print(images.shape)
+print(labels.shape)
+
+```
+---
+
+## 🎯 Recommended Preprocessing
+
+- Convert 3D medical volumes → stacked 2D slices
+
+- Resize slices to 224 × 224
+
+- Normalize intensity values (ImageNet / medical normalization)
+
+- Remove corrupted or incomplete volumes
+
+- Apply Cyclic Augmentation
+
+- Use Intensity Level Regulation (ILR)
+
+- Split dataset into train / validation / test
+
+---
+
+## 📌 Applications
+
+- Biomedical image classification
+
+- Disease detection (Adrenal & Vessel diseases)
+
+- Early-stage disease diagnosis
+
+- Clinical decision support systems
+
+---
+
+## 📜 Citation
+
+If you use this dataset, please cite:
+
+```
+
+MedMNIST Dataset – Zenodo
+https://zenodo.org/records/10519652
+
+```
+---
+
+## ✅ Notes
+
+- Intended strictly for academic and research purposes
+
+- Follow Zenodo / MedMNIST data usage policies
+
+- Ensure ethical handling of medical data
+
+- Not intended for direct clinical deployment without validation
+
