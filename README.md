@@ -97,7 +97,7 @@ https://zenodo.org/records/10519652
 
 ---
 
-## Dependencies Used
+## 🧰 Dependencies Used
 
 🐍 Python
 🔥 PyTorch / MONAI
@@ -109,7 +109,7 @@ https://zenodo.org/records/10519652
 
 ---
 
-## EDA & Preprocessing
+## 🔍 EDA & Preprocessing
 
 🖤 Conversion to grayscale
 📐 Resizing to 224×224
@@ -134,7 +134,7 @@ Output Classes: Healthy / Diseased
 
 ---
 
-## Model Testing / Evaluation
+## 🧾 Model Testing / Evaluation
 
 **📊 Metrics Used**
 
@@ -152,7 +152,7 @@ Static augmentation techniques
 
 ---
 
-## Results
+## 🏆 Results
 
 **🩺 Classification Performance**
 
@@ -168,7 +168,7 @@ TransAugNet: ~5 seconds
 
 ---
 
-## Limitations & Future Work
+## ⚠️ Limitations & Future Work
 
 📦 Larger multi-organ datasets
 🧠 Advanced transformer integration
@@ -178,7 +178,7 @@ TransAugNet: ~5 seconds
 
 ---
 
-## Deployment Info
+## 🌍 Deployment Info
 
 Python backend
 Trained ResNet3D-50 model
