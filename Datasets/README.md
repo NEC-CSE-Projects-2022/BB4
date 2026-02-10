@@ -30,12 +30,13 @@ https://zenodo.org/records/10519652
 ```
 
 **Zenodo CLI**
-
+```bash
 wget https://zenodo.org/records/10519652/files/medmnist_3d.zip
-
+```
 **Extract**
-
+```bash
 unzip medmnist_3d.zip
+```
 
 ---
 
