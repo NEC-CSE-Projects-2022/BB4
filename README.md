@@ -36,7 +36,25 @@ Original conference/IEEE paper used as inspiration for the model.
 ---
 
 ## Our Improvement Over Existing Paper
-xxxxxxxxxx
+**⏱️ Faster Diagnosis Time**
+Existing manual diagnosis ki ~600 seconds padutundi.
+Mana TransAugNet model tho 5 seconds lo disease identification possible.
+
+**🧠 Transformer-Aware Cyclic Augmentation**
+Previous systems lo static augmentation matrame undedi.
+Mana system lo cyclic + attention-based augmentation, which improves learning stability and accuracy.
+
+**🧩 Better 3D Volumetric Understanding**
+Existing models mostly 2D images tho work chestayi.
+Mana model ResNet3D-50 use chesi 3D medical volumes ni 2D slices ga process chesi, spatial relationships ni correct ga nerchukuntundi.
+
+**📈 Improved Classification Accuracy**
+Attention mechanisms + cyclic augmentation valla
+precision, recall, F1-score significant ga improve ayyayi compared to older methods.
+
+**🧪 Robust Feature Extraction**
+ResNet3D-50 deep residual architecture valla
+subtle disease patterns (Adrenal & Vessel diseases) early stage lo kuda detect cheyyagalugutundi.
 
 ---
 
