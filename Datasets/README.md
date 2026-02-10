@@ -13,6 +13,7 @@
 - Image Type: 3D medical volumes (CT/MRI slices)
 - Classes: Healthy / Diseased
 - Source: Zenodo (official MedMNIST repository)
+
 ** Used for: **
 
     - Biomedical image classification
