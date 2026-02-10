@@ -103,3 +103,70 @@ Datasets/
 - Preprocessing details
 
 - Citation information
+
+---
+
+## ℹ️ About the Data
+
+
+### 🧠 Context
+
+This dataset contains real-world biomedical 3D medical images commonly used in:
+
+- Disease classification
+
+- Biomedical image analysis
+
+- Early-stage disease detection
+
+- Clinical decision support systems
+
+### 📊 Content
+
+- High-quality 3D volumetric medical images
+
+- CT/MRI-based biomedical scans
+
+- Grayscale medical imagery
+
+- Labeled datasets for Healthy vs Diseased classification
+
+### 💡 Inspiration
+
+Designed to support medical AI and deep learning research,
+with a focus on automated diagnosis, faster detection, and AI-assisted healthcare systems.
+
+### 🙏 Acknowledgements
+
+- Dataset provided by the MedMNIST research community
+
+- Original source: MedMNIST Dataset (Zenodo Repository)
+
+--- 
+
+## ⚙️ Usage Examples
+
+### 🐍 PyTorch + MONAI
+
+``` python
+from monai.transforms import (
+    Compose,
+    LoadImage,
+    AddChannel,
+    Resize,
+    NormalizeIntensity
+)
+from monai.data import Dataset, DataLoader
+
+transforms = Compose([
+    LoadImage(image_only=True),
+    AddChannel(),
+    Resize((224, 224, 224)),
+    NormalizeIntensity()
+])
+
+dataset = Dataset(data=image_list, transform=transforms)
+loader = DataLoader(dataset, batch_size=16, shuffle=True)
+
+```
+
