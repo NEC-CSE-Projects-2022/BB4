@@ -20,6 +20,8 @@
     - 3D medical image analysis
     - Clinical decision support systems
 
+---
+
 ## 🔗 Download
 
 **📥 Zenodo (Official – MedMNIST Dataset)**
