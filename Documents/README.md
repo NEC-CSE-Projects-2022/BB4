@@ -187,7 +187,7 @@ python predict.py --input path/to/medical_volume
 
 ---
 
-##🔬 Research Contributions
+## 🔬 Research Contributions
 
 
 - Transformer-Aware Cyclic Augmentation
@@ -247,7 +247,7 @@ Testing, performance analysis, deployment support
 
 ---
 
-##🎓 Guide
+## 🎓 Guide
 
 Dr. S. N. Tirumala Rao, M.Tech., Ph.D
 Professor & HoD, CSE
