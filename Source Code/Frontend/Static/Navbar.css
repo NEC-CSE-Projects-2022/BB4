@@ -1,0 +1,106 @@
+/* ======================================
+   PREMIUM GLASS NAVBAR – TRANS AUG NET
+====================================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 60px;
+
+  /* Glass effect */
+  background: rgba(15, 32, 39, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- LOGO ---------- */
+.navbar h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  background: linear-gradient(90deg, #ffffff, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 4px 18px rgba(0, 229, 255, 0.35);
+}
+
+/* ---------- LINKS ---------- */
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+
+  padding: 8px 4px;
+  transition: color 0.35s ease;
+}
+
+/* Hover underline animation */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background: linear-gradient(90deg, #00e5ff, #38f9d7);
+  transition: width 0.35s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: #00e5ff;
+}
+
+/* ---------- ACTIVE LINK (OPTIONAL) ---------- */
+.navbar a.active {
+  color: #00e5ff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .navbar h2 {
+    font-size: 22px;
+  }
+
+  .navbar div {
+    gap: 18px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}

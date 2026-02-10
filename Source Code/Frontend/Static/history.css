@@ -1,0 +1,157 @@
+/* ===== PAGE LAYOUT ===== */
+.history-page {
+  min-height: calc(100vh - 80px);
+  padding: 60px 80px;
+  color: #e5ecff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== TITLE ===== */
+.history-page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+/* ===== EMPTY TEXT ===== */
+.empty-text {
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+/* ===== HISTORY LIST ===== */
+.history-list {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ===== CARD ===== */
+.history-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  padding: 18px 26px;
+  display: grid;
+  grid-template-columns: 2.4fr 1fr 1.2fr 1.8fr; /* FILE | DATASET | PRED | TIME */
+  align-items: center;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+.history-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+/* ===== FILE NAME ===== */
+.file-name {
+  font-size: 15px;
+  font-weight: 600;
+  word-break: break-all;
+  color: #f1f5ff;
+  font-family: monospace;
+}
+
+/* ===== DATASET BADGE ===== */
+.dataset {
+  justify-self: center;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Dataset colors */
+.dataset.vessel {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: #f5f3ff;
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.45);
+}
+
+.dataset.adrenal {
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #eff6ff;
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.45);
+}
+
+.dataset.invalid {
+  background: linear-gradient(135deg, #94a3b8, #475569);
+  color: #f8fafc;
+  box-shadow: 0 8px 20px rgba(148, 163, 184, 0.45);
+}
+
+/* ===== PREDICTION BADGE ===== */
+.prediction {
+  justify-self: center;
+  padding: 8px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+/* HEALTHY */
+.prediction.healthy {
+  background: linear-gradient(135deg, #00ff88, #00c853);
+  color: #002b16;
+  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.45);
+}
+
+/* DISEASED */
+.prediction.diseased {
+  background: linear-gradient(135deg, #ff5252, #d50000);
+  color: white;
+  box-shadow: 0 10px 25px rgba(255, 82, 82, 0.45);
+}
+
+/* INVALID IMAGE */
+.prediction.invalid {
+  background: linear-gradient(135deg, #4fc3f7, #1565c0);
+  color: white;
+  box-shadow: 0 10px 25px rgba(79, 195, 247, 0.45);
+}
+
+/* ===== TIME ===== */
+.time {
+  justify-self: end;
+  font-size: 13px;
+  opacity: 0.75;
+  font-weight: 500;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .history-page {
+    padding: 40px 20px;
+  }
+
+  .history-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .dataset,
+  .prediction,
+  .time {
+    justify-self: center;
+  }
+}
