@@ -15,10 +15,10 @@
 - Source: Zenodo (official MedMNIST repository)
 
 **used for:**
-    - Biomedical image classification
-    - Disease detection
-    - 3D medical image analysis
-    - Clinical decision support systems
+- Biomedical image classification
+- Disease detection
+- 3D medical image analysis
+- Clinical decision support systems
 
 ---
 
