@@ -14,8 +14,7 @@
 - Classes: Healthy / Diseased
 - Source: Zenodo (official MedMNIST repository)
 
-** Used for: **
-
+**used for:**
     - Biomedical image classification
     - Disease detection
     - 3D medical image analysis
