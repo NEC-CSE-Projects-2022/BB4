@@ -136,14 +136,14 @@ Output Classes: Healthy / Diseased
 
 ## Model Testing / Evaluation
 
-# 📊 Metrics Used
+**📊 Metrics Used**
 Accuracy
 Precision
 Recall
 F1-Score
 Confusion Matrix
 
-# 🔍 Compared With
+**🔍 Compared With**
 
 Manual diagnosis (human experts)
 2D CNN-based models
