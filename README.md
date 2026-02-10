@@ -137,6 +137,7 @@ Output Classes: Healthy / Diseased
 ## Model Testing / Evaluation
 
 **📊 Metrics Used**
+
 Accuracy
 Precision
 Recall
@@ -153,7 +154,7 @@ Static augmentation techniques
 
 ## Results
 
-# 🩺 Classification Performance
+**🩺 Classification Performance**
 
 **📊 Overall Accuracy**
 ✔️ High classification accuracy achieved over 87% for both AdrenalMNIST3D and VesselMNIST3D datasets
