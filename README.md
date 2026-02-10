@@ -71,14 +71,15 @@ The model combines ResNet3D-50 with Transformer-Aware Cyclic Augmentation to imp
 📊 Medical image classification
 🌍 AI-assisted healthcare systems
 
-# 🔁 Workflow
+### 🔁 Workflow
 
- 🧬 Input 3D Medical Image (CT/MRI)
- Preprocessing (3D → 2D slices)
- 🔄 Cyclic Augmentation + ILR
- 🧠 ResNet3D-50 (Feature Extraction)
- 🎯 Classification (Healthy / Diseased)
- 📈 Output Prediction
+Input 3D Medical Image (CT/MRI)
+Preprocessing (3D → 2D slices)
+Cyclic Augmentation + ILR
+ResNet3D-50 (Feature Extraction)
+Classification (Healthy / Diseased)
+ Output Prediction
+ 
 ---
 
 
@@ -183,6 +184,7 @@ Trained ResNet3D-50 model
 GPU-accelerated inference
 Flask-based web application
 Batch prediction support
+
 ---
 
 ## ✨ Project By
