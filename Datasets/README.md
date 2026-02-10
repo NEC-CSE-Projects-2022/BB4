@@ -25,8 +25,9 @@
 ## 🔗 Download
 
 **📥 Zenodo (Official – MedMNIST Dataset)**
-
+```bash
 https://zenodo.org/records/10519652
+```
 
 **Zenodo CLI**
 
