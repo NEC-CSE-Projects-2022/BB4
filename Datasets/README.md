@@ -65,41 +65,41 @@ Datasets/
 
 ```
 
-**📄 Files Description**
-adrenalmnist3d/
+### 📄 Files Description
 
-Contains 3D adrenal medical image volumes
+**adrenalmnist3d/**
 
-Stored as stacked 2D slices
+- Contains 3D adrenal medical image volumes
 
-Grayscale biomedical images
+- Stored as stacked 2D slices
 
-Used for adrenal disease classification
+- Grayscale biomedical images
 
-vesselmnist3d/
+- Used for adrenal disease classification
 
-Contains 3D vessel medical image volumes
+**vesselmnist3d/**
 
-Stored as stacked 2D slices
+- Contains 3D vessel medical image volumes
 
-Grayscale biomedical images
+- Stored as stacked 2D slices
 
-Used for vessel disease classification
+- Grayscale biomedical images
+
+- Used for vessel disease classification
 
 **labels.npy**
 
-Contains ground-truth labels for each volume:
+- Contains ground-truth labels for each volume:
 
-0 → Healthy
-
-1 → Diseased
+   - 0 → Healthy
+   - 1 → Diseased
 
 **README.md**
 
-Dataset description
+- Dataset description
 
-Usage instructions
+- Usage instructions
 
-Preprocessing details
+- Preprocessing details
 
-Citation information
+- Citation information
