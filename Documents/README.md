@@ -35,19 +35,234 @@ Repository for TransAugNet, a deep learning–based biomedical image analysis fr
 - CAMERA_READY_PAPER.pdf
 → Final research paper explaining TransAugNet methodology and results
 
-BB10_ABSTRACT.pdf
+- BB4_ABSTRACT.pdf
 → Project abstract and overview
 
-BB10_CONF.pptx
+- BB4_CONF.pptx
 → Conference presentation
 
-BB10_COLLEGE_REVIEW.pptx
+- BB4_COLLEGE_REVIEW.pptx
 → Internal review presentation
 
-BB10_PROJECT_DOCUMENT.pdf
+- BB4_PROJECT_DOCUMENT.pdf
 → Complete project documentation (design, implementation, experiments)
 
- 
+---
+
+## 🧠 Quick System Description
+
+### Input (Image)
+
+User uploads CT/MRI volume
+→ Preprocessing (3D → 2D slices)
+→ Cyclic Augmentation + ILR
+→ ResNet3D-50 feature extraction
+→ Disease classification
+→ Prediction output (Healthy / Diseased)
+
+
+---
+
+## ⚙️ Workflow
+
+3D Medical Image
+→ Preprocessing
+→ Cyclic Augmentation
+→ ResNet3D-50 Encoder
+→ Classification Layer
+→ Prediction Output
+
+
+---
+
+
+## 🗂 Dataset Used
+
+- AdrenalMNIST3D
+- VesselMNIST3D
+
+Used for:
+
+   - Biomedical image classification
+   
+   - Disease detection
+   
+   - Medical AI research
+
+---
+
+## 🧰 Models & Tools
+
+
+- ResNet3D-50
+
+- Transformer Attention
+
+- Cyclic Augmentation + ILR
+
+- PyTorch
+
+- MONAI
+
+- NumPy
+
+- Pandas
+
+- Matplotlib
+
+- Flask
+
+---
+
+## 💻 Environment & Hardware
+
+### Software
+- Python 3.x
+- Google Colab (GPU)
+- Jupyter Notebook
+- OS: Windows 10 or later
+
+### Hardware
+- Intel Core i5 or above
+- RAM: 8GB+
+- GPU: NVIDIA (Colab / CUDA enabled)
+
+---
+
+## 📊 Evaluation & Performance
+
+### Metrics
+
+- Accuracy
+
+- Precision
+
+- Recall
+
+- F1-Score
+
+  ### Highlights
+
+- High disease classification accuracy
+
+- Reduced false positives & false negatives
+
+- Stable predictions across 3D volumes
+
+---
+
+## 🚀 Installation
+
+### Clone repo
+
+```bash
+git clone <repo-url>
+cd TransAugNet
+```
+
+### Create virtual environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+
+## ▶ Usage Examples
+
+
+### Disease Prediction
+
+```bash
+python predict.py --input path/to/medical_volume
+```
+
+---
+
+##🔬 Research Contributions
+
+
+- Transformer-Aware Cyclic Augmentation
+
+- Robust 3D medical image learning
+
+- Reduced overfitting with ILR
+
+- Faster diagnosis with high accuracy
+
+- Real-time clinical decision support potential
+
+---
+
+## 📈 Applications
+
+- Automated disease diagnosis
+
+- Early-stage disease detection
+
+- Clinical decision support systems
+
+- Biomedical image analysis
+
+- AI-assisted healthcare
+
+---
+
+## 🔮 Future Work
+
+
+- Larger multi-organ datasets
+
+- Advanced transformer architectures
+
+- Explainable AI for medical interpretation
+
+- Web & mobile deployment
+
+- Hospital system integration
+
+---
+
+## 👥 Team
+
+### 22471A05B2 — Nimmala Ashok
+
+System architecture, model design, training & integration
+
+### 22471A0582 — Chenna Reddy Sudheer Reddy
+
+Dataset preprocessing, augmentation, evaluation
+
+### 22471A05D9 — Yamarthy Venkata Krishna
+
+Testing, performance analysis, deployment support
+
+---
+
+##🎓 Guide
+
+Dr. S. N. Tirumala Rao, M.Tech., Ph.D
+Professor & HoD, CSE
+
+---
+
+## 📧 Contact
+
+ashoknimmala478@gmail.com
+
+---
+
+
+## 📜 License
+Academic & Research Use Only
 
 
 
