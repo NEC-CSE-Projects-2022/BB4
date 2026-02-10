@@ -44,6 +44,27 @@ unzip medmnist_3d.zip
 
 **Recommended Folder Structure**
 
+```
+
+Datasets/
+│
+├── adrenalmnist3d/
+│   ├── train/
+│   ├── val/
+│   ├── test/
+│
+├── vesselmnist3d/
+│   ├── train/
+│   ├── val/
+│   ├── test/
+│
+├── labels.npy
+│
+└── README.md
+
+
+```
+
 **📄 Files Description**
 adrenalmnist3d/
 
