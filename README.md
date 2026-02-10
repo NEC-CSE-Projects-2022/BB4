@@ -58,53 +58,137 @@ subtle disease patterns (Adrenal & Vessel diseases) early stage lo kuda detect c
 
 ---
 
-## About the Project
-Give a simple explanation of:
-- What your project does
-- Why it is useful
-- General project workflow (input → processing → model → output)
+## 🧩 About the Project
+This project presents TransAugNet, a deep learning–based biomedical image analysis system designed for accurate and fast disease detection using 3D medical images.
+The model combines ResNet3D-50 with Transformer-Aware Cyclic Augmentation to improve diagnostic accuracy and reduce response time significantly.
 
+
+### 🎯 Applications
+
+🏥 Clinical decision support
+🧠 Automated disease diagnosis
+⏱️ Early-stage disease detection
+📊 Medical image classification
+🌍 AI-assisted healthcare systems
+
+# 🔁 Workflow
+
+ 🧬 Input 3D Medical Image (CT/MRI)
+ Preprocessing (3D → 2D slices)
+ 🔄 Cyclic Augmentation + ILR
+ 🧠 ResNet3D-50 (Feature Extraction)
+ 🎯 Classification (Healthy / Diseased)
+ 📈 Output Prediction
 ---
 
+
 ## Dataset Used
-👉 **[Dataset Name](Dataset URL)**
+👉 **3D Bio - medical images (Zenodo)**  
+https://zenodo.org/records/10519652
 
 **Dataset Details:**
-xxxxxxxxxx
+
+📦 Total images: 3,492 (3D volumes)
+📊 AdrenalMNIST3D: 1,584 samples
+📊 VesselMNIST3D: 1,908 samples
+🧬 High-resolution volumetric medical images
+⚖️ Balanced and suitable for 3D disease classification
 
 ---
 
 ## Dependencies Used
-xxxxxxxxxx, xxxxxxxxxx, xxxxxxxxxx ...
+
+🐍 Python
+🔥 PyTorch / MONAI
+🧠 ResNet3D-50
+📊 NumPy, Pandas
+📈 Matplotlib
+🖥️ Google Colab (GPU)
+🌐 Flask (Deployment)
 
 ---
 
 ## EDA & Preprocessing
-xxxxxxxxxx
+
+🖤 Conversion to grayscale
+📐 Resizing to 224×224
+📉 Normalization (ImageNet stats)
+🔄 Cyclic Augmentation
+🎚️ Intensity Level Regulation (ILR)
+🔁 Random rotation & flipping
+🌫️ Gaussian smoothing & contrast adjustment
 
 ---
 
-## Model Training Info
-xxxxxxxxxx
+## 🧪 Model Training Info 
+
+ResNet3D-50 generates deep 3D volumetric feature embeddings
+Transformer-Aware Cyclic Augmentation improves feature learning
+Intensity Level Regulation (ILR) stabilizes training
+Cross-Entropy Loss for binary classification
+Adam Optimizer for faster convergence
+Batch Size: 16
+Training Epochs: 10
+Output Classes: Healthy / Diseased
 
 ---
 
 ## Model Testing / Evaluation
-xxxxxxxxxx
+
+# 📊 Metrics Used
+Accuracy
+Precision
+Recall
+F1-Score
+Confusion Matrix
+
+# 🔍 Compared With
+
+Manual diagnosis (human experts)
+2D CNN-based models
+Static augmentation techniques
 
 ---
 
 ## Results
-xxxxxxxxxx
+
+# 🩺 Classification Performance
+
+**📊 Overall Accuracy**
+✔️ High classification accuracy achieved over 87% for both AdrenalMNIST3D and VesselMNIST3D datasets
+✔️ Significant improvement over traditional and 2D CNN-based approaches
+
+ **Diagnosis Time**
+ 
+Human expert: ~600 seconds
+
+TransAugNet: ~5 seconds
 
 ---
 
 ## Limitations & Future Work
-xxxxxxxxxx
+
+📦 Larger multi-organ datasets
+🧠 Advanced transformer integration
+🌐 Real-time hospital deployment
+📱 Web & mobile-based diagnosis systems
+🔍 Explainable AI for doctors
 
 ---
 
 ## Deployment Info
-xxxxxxxxxx
 
+Python backend
+Trained ResNet3D-50 model
+GPU-accelerated inference
+Flask-based web application
+Batch prediction support
 ---
+
+## ✨ Project By
+
+👨‍💻 Nimmala Ashok
+👨‍💻 Chenna Reddy Sudheer Reddy
+👨‍💻 Yamarthy Venkata Krishna
+
+🎓 TransAugNet: Transformer-Aware Cyclic Augmentation for Biomedical Image Analysis
