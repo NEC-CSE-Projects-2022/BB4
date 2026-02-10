@@ -4,9 +4,9 @@
 
 ## 🔎 Overview
 
-Name: MedMNIST (3D Subsets)
-Total Samples: 3,492 volumetric images
-Datasets Used:
+- Name: MedMNIST (3D Subsets)
+- Total Samples: 3,492 volumetric images
+- Datasets Used:
 
 **AdrenalMNIST3D**
 
