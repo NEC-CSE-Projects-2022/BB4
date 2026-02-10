@@ -10,18 +10,15 @@
     - **AdrenalMNIST3D**
     - **VesselMNIST3D**
 
-Image Type: 3D medical volumes (CT/MRI slices)
-Classes: Healthy / Diseased
-Source: Zenodo (official MedMNIST repository)
-Used for:
+- Image Type: 3D medical volumes (CT/MRI slices)
+- Classes: Healthy / Diseased
+- Source: Zenodo (official MedMNIST repository)
+** Used for: **
 
-Biomedical image classification
-
-Disease detection
-
-3D medical image analysis
-
-Clinical decision support systems
+    - Biomedical image classification
+    - Disease detection
+    - 3D medical image analysis
+    - Clinical decision support systems
 
 ## 🔗 Download
 
